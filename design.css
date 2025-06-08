@@ -19,6 +19,7 @@ body {
     margin-top: 50px;
 }
 button {
+    background-color:rgb(70, 70, 70);
     padding: 1em 2em;
     border: none;
     border-radius: 1000px;
@@ -35,14 +36,17 @@ button {
 button::after{
     content: '';
     position: absolute;
-    height: 120%;
-    width: 110%;
+    height: 107%;
+    width: 103%;
     border-radius: 1000px;
     background-image: linear-gradient(to bottom right, blue,purple);
     z-index: -1;
 
 }
-
+button:hover{
+    z-index: 0;
+    box-shadow: 40px 0 100px rgba(0, 0, 255, 0.404), -40px 0 100px rgba(128, 0, 128, 0.651);  
+}       
 .dark_mode {
     background-color: black;
     color: white;
